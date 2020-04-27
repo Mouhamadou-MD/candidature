@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Exercice 8-V2</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+		
+		<fieldset>
+			<legend>Candidature</legend>
+			
+			<form action="recapitulation.php" method="GET" name="authentification" >
+   
+			   <label> Prenom </label>
+			   <input type="text" required name="prenom" placeholder="saisire votre prénom"/>
+			   <br/>
+			   	 <label> Nom</label>
+			   <input type="text" required name="nom" placeholder="saisire votre nom"/>
+			   <br/>
+			   
+			   
+			   <label>Civilité </label>
+			   
+			   <select name="civilite" >
+				<option value="m" selected />Monsieur</option>
+				<option value="mme" />Madame</option>
+				<option value="mlle" />Mademoiselle</option>
+				</select>
+				
+			   
+			   <br/>
+			   
+			    <label>Date de naissance:</label>
+			    <input type="text" required name="date" placeholder="saisire votre date de naissance"/>
+			    <br/>
+			    <label>Coordonnées:</label>
+			    <input type="tel" required name="telephone" placeholder="saisire votre numéro"/>
+			    <input type="email" required name="email" placeholder="saisire votre email"/>
+			    <br/>
+			    <label>PHP :</label><br/>
+			     <input type="radio" name="niveau" value="deb" checked />Debutant
+			     <input type="radio" name="niveau" value="moy" />Moyen
+			     <input type="radio" name="niveau" value="bon" />Bon
+			     <br/><br/>
+			      <label>Framworks PHP pratiqués :</label> <br/>
+			     <input type="checkbox" name="fram[]" value="1"/>Symfony
+			     <input type="checkbox" name="fram[]" value="2"/>CodeIgniter
+			     <input type="checkbox" name="fram[]" value="3"/>FuelPHP
+			     <input type="checkbox" name="fram[]" value="4"/>CakePHP
+			     <input type="checkbox" name="fram[]" value="5"/>Laravel
+			     <br/>
+			     <br/>
+			     <label>Presentation parcours</label>
+			    
+			     <textarea name="parcours" rows="10" cols="150"></textarea>
+			     <br/>
+			     
+			   <br/>
+			   <input type="reset" value="Rénitialiser" />
+			   <input type="submit" value="Valider" />
+
+			</form>
+			
+			
+		</fieldset>
+		
+	</body>
+	
+</html>
